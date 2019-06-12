@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="120" id="I3L-CB-plA">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="parallaxCell" rowHeight="120" id="I3L-CB-plA" customClass="ParallaxCell" customModule="accelerometron" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="120"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="I3L-CB-plA" id="pLp-0X-QSP">
@@ -47,6 +47,10 @@
                                         <constraint firstItem="pZ4-xk-KtF" firstAttribute="top" secondItem="pLp-0X-QSP" secondAttribute="top" id="kEs-t1-YOh"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="descriptionLabel" destination="pZ4-xk-KtF" id="t61-q0-eMN"/>
+                                    <outlet property="itemImageView" destination="LVu-cV-Jja" id="EcQ-uT-f2x"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
